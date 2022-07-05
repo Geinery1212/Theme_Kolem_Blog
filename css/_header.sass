@@ -1,0 +1,150 @@
+.header__first-row
+    background-color: $blanco
+
+.header__first-row
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    padding: 10px 0
+
+.content-left
+    display: flex
+    justify-content: flex-start
+
+.content-left__logo_small
+    width: 25px
+    margin: 0 20px
+
+.content-left__phrase
+    font-family: $barlow
+    font-weight: 500
+    font-size: 1.6rem
+
+.content-left_no-margin
+    margin-left: 0px
+
+.content-right
+    display: flex
+    justify-content: flex-end
+
+.content-right__link
+    font-family: $barlow
+    font-family: 500
+    font-size: 1.5rem
+    display: inline-block
+    margin-right: 2em
+    color: black
+    text-decoration: none
+
+.content-right__link:hover
+    text-decoration: underline
+
+.header__second-row
+    background-color: $rojo-fuerte
+    padding: 1rem 0
+
+.content-right_no-margin
+    margin-right: 0px
+
+.content-left__logo_medium
+    width: 80px
+
+.content-left__phrase_right
+    margin-left: 6rem
+
+.content-left__phrase-h1
+    font-family: $mclaren
+    font-weight: 400
+    font-size: 3.2rem
+    color: $blanco
+
+.content-left__phrase-h3
+    font-family: $mclaren
+    font-weight: 400
+    font-size: 2rem
+    color: #C8A49C
+
+/* ---------------------------------------slide--------------------------------------- */
+.header__third-row
+    z-index: 0
+
+.swiper-slide .title,
+.swiper-slide .subtitle,
+.swiper-slide .text
+    font-family: $opensans
+    color: $blanco
+
+.swiper-slide .title
+    font-size: 4rem
+    font-weight: 500
+
+.swiper-slide .subtitle
+    font-size: 2rem
+    font-weight: 400
+
+.swiper-slide .text
+    font-size: 1.3rem
+    font-weight: 300
+
+/* ----------------------------------------menu---------------------------------------- */
+.header__fourth-row
+    background-color: $rojo-debil
+    z-index: 1
+
+    .nav-bar
+        padding: 20px
+        display: block
+        color: white
+        cursor: pointer
+        font-size: 2.4rem
+
+    .nav-bar-text
+        font-family: $mclaren
+        margin-left: 10px
+
+    .menu,
+    .submenu
+        list-style: none
+        margin: 0px
+        padding: 0px
+
+    .menu
+        background-color: $negro
+        font-family: $barlow
+        font-size: 1.5rem
+        width: 100%
+        height: 0px
+        margin-left: -200%
+        transition: all 1s
+
+    .show
+        margin-left: 0px
+
+    .menu__link
+        display: block
+        padding: 20px
+        color: white
+        font-size: 1.4rem
+        text-decoration: none
+        transition: all .2s ease
+
+    .menu__link_sm
+        padding: 14px
+
+    .menu__link:hover,
+    .submenu__link:hover
+        background-color: rgb(85, 84, 84)
+
+    .submenu
+        background-color: $negro
+        height: 0px
+        overflow: hidden
+        transition: all 0.2s
+
+    .submenu__link
+        display: block
+        padding: 20px
+        padding-left: 50px
+        color: white
+        font-size: 1.4rem
+        text-decoration: none
+        transition: all .2s ease

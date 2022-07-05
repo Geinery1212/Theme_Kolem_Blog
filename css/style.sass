@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;500&family=Lato:wght@400;700&family=McLaren&family=Open+Sans:wght@300;400;500&display=swap')
+
+$lato: 'Lato', sans-serif
+$opensans: 'Open Sans', sans-serif
+$barlow: 'Barlow', sans-serif
+$mclaren: 'McLaren', cursive
+$blanco: #FAFAFA
+$negro: #333
+$rojo-fuerte: #900C3F
+$rojo-debil: #C70039
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null)
+    position: $position
+    top: $top
+    right: $right
+    bottom: $bottom
+    left: $left
+
+@import general
+@import header
+@import slider
+@import featured
+@import pagination
+@import category
+@import sidebar
+@import footer
+@import socialmedia
+@import responsive
+@import single_entry

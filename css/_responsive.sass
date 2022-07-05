@@ -1,0 +1,96 @@
+@media (min-width:1199.98px)
+    // oculta el menu amburguesa y activa el menu a partir de 1024
+    .header__fourth-row
+        .nav-bar
+            display: none
+        .menu
+            background-color: $rojo-debil
+            margin-left: 0px
+            height: auto
+            display: flex
+        .menu__link:hover
+            background-color: #ac0c39
+        .menu__link:hover, .submenu__link:hover
+            background-color: rgba(0, 0, 0, 0.26)
+        .container-submenu
+            position: relative
+        .submenu
+            position: absolute
+            top: 56px
+            height: auto
+            width: 200px
+            overflow: visible
+            z-index: 10
+            opacity: 0
+            visibility: hidden
+        .container-submenu:hover .submenu
+            opacity: 1
+            visibility: visible
+    .article__main
+        grid-column: span 2
+    .article__image.article__main
+        height: 225px
+    .article__single
+        grid-column: span 3
+    .article__image.article__single
+        height: 450px
+
+@media (min-width: 991.99px)
+    .container-single-aside
+        grid-template-columns: 80% 20%
+    .single-post
+        padding: 0px 20px 0px 0px
+    
+@media (max-width: 991.98px)
+    .container-single-aside
+        grid-template-columns: 1fr
+    .aside
+        margin-top: 10px  
+    .widget
+        width: 80%
+        margin: 15px auto
+    .single-post
+        padding: 0px
+
+@media (min-width: 767.99px)
+    .single-post-autor
+        display: flex
+        flex-direction: column
+        align-content: center
+        margin-top: 15px
+    .single-entry-section
+        grid-template-columns: 15% 85%
+
+@media (max-width: 767.98px)
+    .single-post-autor
+        display: none
+    html
+        font-size: 50%
+        
+@media (max-width: 575.98px)
+    .header__first-row
+        grid-template-columns: 1fr
+        justify-items: center
+        .content-left
+            display: none
+        .content-right
+            justify-content: center
+    .content-left__phrase-h1
+        font-size: 2.5rem
+    .content-left__phrase-h3
+        font-size: 1.5rem
+    .social-media-container
+        flex-wrap: wrap
+    .social-media__link
+        width: 80px
+        margin: 0px 
+
+@media ( max-width: 399.8px)
+    .header__third-row
+        display: none
+    .social-media 
+        padding: 20px 0px
+        &__link
+            width: 70px
+            padding: 10px 0px
+    

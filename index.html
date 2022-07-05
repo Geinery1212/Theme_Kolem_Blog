@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Programa delfin</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="header__first-row container">
+            <div class="content-left">
+                <img src="./img/logo-onu.svg" class="content-left__logo_small content-left_no-margin" alt="">
+                <p class="content-left__phrase">Lorem, ipsum.</p>
+            </div>
+            <div class="content-right">
+                <a href="#" class="content-right__link">Acerca de</a>
+                <a href="#" class="content-right__link content-right_no-margin">Contacto</a>
+            </div>
+        </section>
+        <section class="header__second-row">
+            <div class="container">
+                <div class="content-left">
+                    <img src="./img/logo_obs_p10.png" alt="" class="content-left__logo_medium content-left_no-margin">
+                    <div class="content-left__phrase content-left__phrase_right">
+                        <h1 class="content-left__phrase-h1">Neque porro quisquam est qui </h1>
+                        <h3 class="content-left__phrase-h3"> odio sed urna. Nunc nec tortor eros.</h3>
+                    </div>
+                </div>
+                <div class="content-right">
+                </div>
+            </div>
+        </section>
+        <section class="header__third-row">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+                <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title" data-swiper-parallax="-300">Slide 1</div>
+                        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                                laoreet justo vitae porttitor porttitor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title" data-swiper-parallax="-300">Slide 2</div>
+                        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                                laoreet justo vitae porttitor porttitor. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title" data-swiper-parallax="-300">Slide 3</div>
+                        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                                laoreet justo vitae porttitor porttitor. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="header__fourth-row">
+            <div class="container-lg">
+                <span class="nav-bar" id="btn-menu"><i class="fa-solid fa-bars"></i><span
+                        class="nav-bar-text">Menú</span></span>
+                <nav class="main-nav">
+                    <ul class="menu" id="menu">
+                        <li class="menu__item"><a href="#" class="menu__link">Inicio</a></li>
+                        <li class="menu__item container-submenu">
+                            <a href="#" class="menu__link submenu-btn">Categorias <i
+                                    class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li class="submenu__item"><a href="#" class="submenu__link">Lorem</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">ipsum</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link">dolor</a></li>
+                                <li class="submenu__item"><a href="#" class="submenu__link submenu-btn">sit amet</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="./single.html" class="menu__link">Noticias</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Acerca de</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>      
+    </header>
+    <main>
+        <div class="container">
+            <section class="featured">
+                <h2 class="featured__title"><i class="fa-solid fa-star"></i>Lo más reciente</h2>
+                <div class="featured__grid">
+                    <article class="article article__main">
+                        <div class="article__image article__main">
+                            <img src="./img/image_article.jpeg" alt="">
+                        </div>
+                        <div class="article__text">
+                            <h3 class="article__title">Lorem ipsum dolor sit amet.</h3>
+                            <div class="date">
+                                <p><i class="fa-solid fa-calendar-days date__icon"></i><span class="date__text">Lunes,
+                                        junio 20, 2022</span></p>
+                            </div>
+                            <p class="article__extract">The point of using Lorem Ipsum is that it has a more-or-less
+                                normal distribution of letters, as opposed to using 'Content here, content here', making
+                                it look like readable English.</p>
+                            <div class="article__footer article__main">
+                                <a href="#" class="button">
+                                    <div class="button__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg>
+                                    </div>
+                                    <span>Leer más</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="article__image">
+                            <img src="./img/image_article.jpeg" alt="">
+                        </div>
+                        <div class="article__text">
+                            <h3 class="article__title">Lorem ipsum dolor sit amet.</h3>
+                            <div class="date">
+                                <p><i class="fa-solid fa-calendar-days date__icon"></i><span class="date__text">Lunes,
+                                        junio 20, 2022</span></p>
+                            </div>
+                            <p class="article__extract">The point of using Lorem Ipsum is that it has a more-or-less
+                                normal distribution of letters, as opposed to using 'Content here, content here', making
+                                it look like readable English.</p>
+                            <div class="article__footer">
+                                <a href="#" class="button">
+                                    <div class="button__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg>
+                                    </div>
+                                    <span>Leer más</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="article__image">
+                            <img src="./img/image_article.jpeg" alt="">
+                        </div>
+                        <div class="article__text">
+                            <h3 class="article__title">Lorem ipsum dolor sit amet.</h3>
+                            <div class="date">
+                                <p><i class="fa-solid fa-calendar-days date__icon"></i><span class="date__text">Lunes,
+                                        junio 20, 2022</span></p>
+                            </div>
+                            <p class="article__extract">The point of using Lorem Ipsum is that it has a more-or-less
+                                normal distribution of letters, as opposed to using 'Content here, content here', making
+                                it look like readable English.</p>
+                            <div class="article__footer">
+                                <a href="#" class="button">
+                                    <div class="button__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg>
+                                    </div>
+                                    <span>Leer más</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="article__image">
+                            <img src="./img/image_article.jpeg" alt="">
+                        </div>
+                        <div class="article__text">
+                            <h3 class="article__title">Lorem ipsum dolor sit amet.</h3>
+                            <div class="date">
+                                <p><i class="fa-solid fa-calendar-days date__icon"></i><span class="date__text">Lunes,
+                                        junio 20, 2022</span></p>
+                            </div>
+                            <p class="article__extract">The point of using Lorem Ipsum is that it has a more-or-less
+                                normal distribution of letters, as opposed to using 'Content here, content here', making
+                                it look like readable English.</p>
+                            <div class="article__footer">
+                                <a href="#" class="button">
+                                    <div class="button__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg>
+                                    </div>
+                                    <span>Leer más</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="article__image">
+                            <img src="./img/image_article.jpeg" alt="">
+                        </div>
+                        <div class="article__text">
+                            <h3 class="article__title">Lorem ipsum dolor sit amet.</h3>
+                            <div class="date">
+                                <p><i class="fa-solid fa-calendar-days date__icon"></i><span class="date__text">Lunes,
+                                        junio 20, 2022</span></p>
+                            </div>
+                            <p class="article__extract">The point of using Lorem Ipsum is that it has a more-or-less
+                                normal distribution of letters, as opposed to using 'Content here, content here', making
+                                it look like readable English.</p>
+                            <div class="article__footer">
+                                <a href="#" class="button">
+                                    <div class="button__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg>
+                                    </div>
+                                    <span>Leer más</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="article__image">
+                            <img src="./img/image_article.jpeg" alt="">
+                        </div>
+                        <div class="article__text">
+                            <h3 class="article__title">Lorem ipsum dolor sit amet.</h3>
+                            <div class="date">
+                                <p><i class="fa-solid fa-calendar-days date__icon"></i><span class="date__text">Lunes,
+                                        junio 20, 2022</span></p>
+                            </div>
+                            <p class="article__extract">The point of using Lorem Ipsum is that it has a more-or-less
+                                normal distribution of letters, as opposed to using 'Content here, content here', making
+                                it look like readable English.</p>
+                            <div class="article__footer">
+                                <a href="#" class="button">
+                                    <div class="button__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg>
+                                    </div>
+                                    <span>Leer más</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="article__image">
+                            <img src="./img/image_article.jpeg" alt="">
+                        </div>
+                        <div class="article__text">
+                            <h3 class="article__title">Lorem ipsum dolor sit amet.</h3>
+                            <div class="date">
+                                <p><i class="fa-solid fa-calendar-days date__icon"></i><span class="date__text">Lunes,
+                                        junio 20, 2022</span></p>
+                            </div>
+                            <p class="article__extract">The point of using Lorem Ipsum is that it has a more-or-less
+                                normal distribution of letters, as opposed to using 'Content here, content here', making
+                                it look like readable English.</p>
+                            <div class="article__footer">
+                                <a href="#" class="button">
+                                    <div class="button__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg>
+                                    </div>
+                                    <span>Leer más</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="pagination">
+                <ul class="pagination__list">
+                    <li class="pagination__item disabled">Página 1 de 6</li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">6</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">Ultima »</a></li>
+                </ul>
+            </section>
+            <section class="categories container">
+                <h2 class="categories__title">Categorías</h2>
+                <div class="categories__grid">
+                    <div class="category">
+                        <div class="category__image-box">
+                            <img src="./img/category.jpg" alt="" class="category__image">
+                        </div>
+                        <h3 class="category__name">Lorem ipsum dolor sit.</h3>
+                    </div>
+                    <div class="category">
+                        <div class="category__image-box">
+                            <img src="./img/category.jpg" alt="" class="category__image">
+                        </div>
+                        <h3 class="category__name">Lorem ipsum dolor sit.</h3>
+                    </div>
+                    <div class="category">
+                        <div class="category__image-box">
+                            <img src="./img/category.jpg" alt="" class="category__image">
+                        </div>
+                        <h3 class="category__name">Lorem ipsum dolor sit.</h3>
+                    </div>
+                    <div class="category">
+                        <div class="category__image-box">
+                            <img src="./img/category.jpg" alt="" class="category__image">
+                        </div>
+                        <h3 class="category__name">Lorem ipsum dolor sit.</h3>
+                    </div>
+                    <div class="category">
+                        <div class="category__image-box">
+                            <img src="./img/category.jpg" alt="" class="category__image">
+                        </div>
+                        <h3 class="category__name">Lorem ipsum dolor sit.</h3>
+                    </div>
+                    <div class="category">
+                        <div class="category__image-box">
+                            <img src="./img/category.jpg" alt="" class="category__image">
+                        </div>
+                        <h3 class="category__name">Lorem ipsum dolor sit.</h3>
+                    </div>
+                    <div class="category">
+                        <div class="category__image-box">
+                            <img src="./img/category.jpg" alt="" class="category__image">
+                        </div>
+                        <h3 class="category__name">Lorem ipsum dolor sit.</h3>
+                    </div>
+                    <div class="category">
+                        <div class="category__image-box">
+                            <img src="./img/category.jpg" alt="" class="category__image">
+                        </div>
+                        <h3 class="category__name">Lorem ipsum dolor sit.</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="footer-menu">
+            <div class="container">
+                <nav class="main-nav">
+                    <ul class="menu" id="menu">
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_sm">Inicio</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_sm">Acerca de</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_sm">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="social-media">
+			<div class="social-media-container">
+				<a class="twitter social-media__link" href="#"><i class="fa-brands fa-twitter social-media__icon"></i></a>
+				<a class="facebook social-media__link" href="#"><i class="fa-brands fa-facebook social-media__icon"></i></a>
+				<a class="youtube social-media__link" href="#"><i class="fa-brands fa-youtube social-media__icon"></i></a>
+				<a class="github social-media__link" href="#"><i class="fa-brands fa-github social-media__icon"></i></a>
+				<a class="instagram social-media__link" href="#"><i class="fa-brands fa-instagram social-media__icon"></i></a>
+			</div>
+		</section>
+        <section class="footer-autor">
+            <p class="footer-autor__name">Ervin Aldo Díaz Jiménez</p>
+        </section>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            speed: 600,
+            parallax: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
