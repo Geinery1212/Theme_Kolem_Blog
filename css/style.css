@@ -43,8 +43,12 @@ main {
 }
 
 .content-left__logo_small {
-  width: 25px;
-  margin: 0 20px;
+  color: #900C3F;
+  font-family: "McLaren", cursive;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 5px;
 }
 
 .content-left__phrase {
@@ -85,8 +89,9 @@ main {
   margin-right: 0px;
 }
 
-.content-left__logo_medium {
+.content-left .custom-logo {
   width: 80px;
+  height: 80px;
 }
 
 .content-left__phrase_right {
@@ -523,7 +528,7 @@ main {
   font-weight: 500;
   font-size: 2rem;
   padding-bottom: 10px;
-  border-bottom: 3px solid #C70039;
+  color: #C70039;
 }
 
 .wp-block-latest-posts__list {
@@ -777,21 +782,24 @@ main {
   margin-right: 5px;
 }
 
-.single-post-autor__img-ctn {
-  width: 90px;
-  margin: 0px auto;
+.single-post-autor {
+  font-family: "McLaren", cursive;
+}
+.single-post-autor .avatar {
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
   border-radius: 50%;
-  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  border: solid #d6dad6;
 }
-
-.single-post-autor__img {
-  width: 100%;
+.single-post-autor .avatar:hover {
+  border: solid #900C3F;
 }
-
-.single-post-autor__name {
-  font-family: "Open Sans", sans-serif;
+.single-post-autor h3 {
+  padding-bottom: 0px !important;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   display: block;
   text-align: center;
 }
@@ -810,14 +818,6 @@ main {
   font-size: 3.5rem;
   text-align: left;
   margin-bottom: 8px;
-}
-
-.single-post__img-ctn {
-  max-width: 1000px;
-}
-
-.single-post__img {
-  width: 100%;
 }
 
 .single-post__groups {

@@ -15,21 +15,23 @@
 .single-post__g-autor-icon
     margin-right: 5px
 
-.single-post-autor__img-ctn
-    width:90px
-    margin: 0px auto
-    border-radius: 50%
-    overflow: hidden
-
-.single-post-autor__img
-    width: 100%
-
-.single-post-autor__name
-    font-family: $opensans
-    font-weight: 400
-    font-size: 1.5rem
-    display: block
-    text-align: center
+.single-post-autor
+    font-family: $mclaren
+    .avatar
+        cursor: pointer
+        display: block
+        margin: 10px auto
+        border-radius: 50%
+        transition: all 0.2s ease-in-out
+        border: solid #d6dad6
+        &:hover
+            border: solid $rojo-fuerte
+    h3
+        padding-bottom: 0px !important
+        font-weight: 400
+        font-size: 1.6rem
+        display: block
+        text-align: center
 
 .single-post
     font-family: $opensans
@@ -44,12 +46,6 @@
     font-size: 3.5rem
     text-align: left
     margin-bottom: 8px
-
-.single-post__img-ctn
-    max-width: 1000px
-
-.single-post__img
-    width: 100%
 
 .single-post__groups
     display: flex

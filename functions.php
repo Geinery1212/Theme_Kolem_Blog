@@ -12,6 +12,15 @@ register_sidebar(array(
     'before_title' => '<h3 class="widget__title">',
     'after_title' => '</h3>',
 ));
+
+register_sidebar(array(
+    'name' => 'author',
+    'before_widget' => '<div class="single-post-autor">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="widget__title">',
+    'after_title' => '</h3>',
+));
+
 function get_excerpt()
 {
     $excerpt = get_the_content();
@@ -24,4 +33,12 @@ function get_excerpt()
     $excerpt = $excerpt . '...';
     return $excerpt;
 }
+
+add_theme_support('custom-logo',  array(
+    'height'               => 80,
+    'width'                => 80,
+    'flex-width'           => true,
+    'flex-height'          => true,
+    'unlink-homepage-logo' => true,
+));
 
