@@ -8,24 +8,28 @@
             margin-left: 0px
             height: auto
             display: flex
-        .menu__link:hover
-            background-color: #ac0c39
-        .menu__link:hover, .submenu__link:hover
-            background-color: rgba(0, 0, 0, 0.26)
-        .container-submenu
-            position: relative
-        .submenu
-            position: absolute
-            top: 56px
-            height: auto
-            width: 200px
-            overflow: visible
-            z-index: 10
-            opacity: 0
-            visibility: hidden
-        .container-submenu:hover .submenu
-            opacity: 1
-            visibility: visible
+            li
+                position: relative
+                &:hover .sub-menu
+                    opacity: 1
+                    visibility: visible    
+                a
+                    &:hover
+                        background-color: rgba(0, 0, 0, 0.26)                
+                .sub-menu
+                    position: absolute
+                    top: 56px
+                    height: auto
+                    width: 200px
+                    overflow: visible
+                    z-index: 10
+                    opacity: 0
+                    visibility: hidden
+                    li
+                        a
+                            &:hover
+                                background-color: rgba(0, 0, 0, 0.26)
+
     .article__main
         grid-column: span 2
     .article__image.article__main

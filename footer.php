@@ -23,7 +23,7 @@
             <p class="footer-autor__name">Ervin Aldo Díaz Jiménez</p>
         </section>
     </footer>
-    <script src="<?=bloginfo('template_url')?>/js/script.js"></script>
+    <script src="<?=bloginfo('template_url')?>/js/script.js?v=<?= time(); ?>"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {

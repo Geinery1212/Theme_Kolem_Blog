@@ -101,13 +101,10 @@
         font-family: $mclaren
         margin-left: 10px
 
-    .menu,
-    .submenu
+    .menu
         list-style: none
         margin: 0px
         padding: 0px
-
-    .menu
         background-color: $negro
         font-family: $barlow
         font-size: 1.5rem
@@ -115,36 +112,38 @@
         height: 0px
         margin-left: -200%
         transition: all 1s
+        li
+            a
+                display: block
+                padding: 20px
+                color: white
+                font-size: 1.4rem
+                text-decoration: none
+                transition: all .2s ease
+                &:hover
+                    background-color: rgb(85, 84, 84)
+            .sub-menu
+                list-style: none
+                margin: 0px
+                padding: 0px
+                background-color: $negro
+                height: 0px
+                overflow: hidden
+                transition: all 0.2s
+                li
+                    a
+                        display: block
+                        padding: 20px
+                        padding-left: 50px
+                        color: white
+                        font-size: 1.4rem
+                        text-decoration: none
+                        transition: all .2s ease
+                        &:hover
+                            background-color: rgb(85, 84, 84)        
 
     .show
         margin-left: 0px
 
-    .menu__link
-        display: block
-        padding: 20px
-        color: white
-        font-size: 1.4rem
-        text-decoration: none
-        transition: all .2s ease
-
     .menu__link_sm
         padding: 14px
-
-    .menu__link:hover,
-    .submenu__link:hover
-        background-color: rgb(85, 84, 84)
-
-    .submenu
-        background-color: $negro
-        height: 0px
-        overflow: hidden
-        transition: all 0.2s
-
-    .submenu__link
-        display: block
-        padding: 20px
-        padding-left: 50px
-        color: white
-        font-size: 1.4rem
-        text-decoration: none
-        transition: all .2s ease

@@ -1,7 +1,10 @@
 <?php
 add_theme_support('post-thumbnails');
 add_image_size('homepage-thumb', 745, 372, true);
-
+register_nav_menus(array(
+    'menu-top' => 'Menu Principal',
+    'menu-bottom' => 'Menu Footer',
+));
 register_sidebar(array(
     'name' => 'sidebar',
     'before_widget' => '<div class="widget">',
@@ -21,3 +24,4 @@ function get_excerpt()
     $excerpt = $excerpt . '...';
     return $excerpt;
 }
+

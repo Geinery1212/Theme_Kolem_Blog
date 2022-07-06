@@ -96,25 +96,22 @@
             <div class="container-lg">
                 <span class="nav-bar" id="btn-menu"><i class="fa-solid fa-bars"></i><span
                         class="nav-bar-text">Menú</span></span>
-                <nav class="main-nav">
-                    <ul class="menu" id="menu">
-                        <li class="menu__item"><a href="#" class="menu__link">Inicio</a></li>
-                        <li class="menu__item container-submenu">
-                            <a href="#" class="menu__link submenu-btn">Categorias <i
-                                    class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="submenu">
-                                <li class="submenu__item"><a href="#" class="submenu__link">Lorem</a></li>
-                                <li class="submenu__item"><a href="#" class="submenu__link">ipsum</a></li>
-                                <li class="submenu__item"><a href="#" class="submenu__link">dolor</a></li>
-                                <li class="submenu__item"><a href="#" class="submenu__link submenu-btn">sit amet</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu__item"><a href="<?=bloginfo('template_url')?>/single.php" class="menu__link">Noticias</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Acerca de</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Contacto</a></li>
-                    </ul>
-                </nav>
+                    <nav class="main-nav">
+                    <?php
+                    if (has_nav_menu('menu-top')) {
+                        wp_nav_menu( array(
+                                'theme_location'    => 'menu-top',
+                                'depth'             => 2,
+                                'container'         => 'ul',
+                                'container_class'   => '',
+                                'container_id'      => '',
+                                'menu_class'        => 'menu',
+                                'menu_id'           => 'menu',
+                                'items_wrap'        => '<ul id="%1$s" class="%2$s"><li class="asd">%3$s</li></ul>',
+                        ) );
+                    }
+				    ?>
+                    </nav>
             </div>
         </section>
     </header>

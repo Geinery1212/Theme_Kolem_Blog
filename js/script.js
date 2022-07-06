@@ -8,9 +8,11 @@ btn_menu.addEventListener('click', function(){
     }
     menu.classList.toggle('show');
 });
-const submenu_btn = document.querySelectorAll(".submenu-btn");
+const submenu_btn = document.querySelectorAll(".menu>li>a[aria-current = 'page']");
 for(let i=0; i<submenu_btn.length; i++){
-    submenu_btn[i].addEventListener('click', function(){
+    submenu_btn[i].removeAttribute('href')
+    submenu_btn[i].addEventListener('click', function(event){
+        event.preventDefault();
         if(window.innerWidth < 1024){
             const submenu = this.nextElementSibling;
             const height = submenu.scrollHeight;
@@ -24,3 +26,5 @@ for(let i=0; i<submenu_btn.length; i++){
         }
     });
 }
+preventD
+

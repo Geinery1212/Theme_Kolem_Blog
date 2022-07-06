@@ -150,13 +150,10 @@ main {
   font-family: "McLaren", cursive;
   margin-left: 10px;
 }
-.header__fourth-row .menu,
-.header__fourth-row .submenu {
+.header__fourth-row .menu {
   list-style: none;
   margin: 0px;
   padding: 0px;
-}
-.header__fourth-row .menu {
   background-color: #333;
   font-family: "Barlow", sans-serif;
   font-size: 1.5rem;
@@ -165,10 +162,7 @@ main {
   margin-left: -200%;
   transition: all 1s;
 }
-.header__fourth-row .show {
-  margin-left: 0px;
-}
-.header__fourth-row .menu__link {
+.header__fourth-row .menu li a {
   display: block;
   padding: 20px;
   color: white;
@@ -176,20 +170,19 @@ main {
   text-decoration: none;
   transition: all 0.2s ease;
 }
-.header__fourth-row .menu__link_sm {
-  padding: 14px;
-}
-.header__fourth-row .menu__link:hover,
-.header__fourth-row .submenu__link:hover {
+.header__fourth-row .menu li a:hover {
   background-color: rgb(85, 84, 84);
 }
-.header__fourth-row .submenu {
+.header__fourth-row .menu li .sub-menu {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
   background-color: #333;
   height: 0px;
   overflow: hidden;
   transition: all 0.2s;
 }
-.header__fourth-row .submenu__link {
+.header__fourth-row .menu li .sub-menu li a {
   display: block;
   padding: 20px;
   padding-left: 50px;
@@ -197,6 +190,15 @@ main {
   font-size: 1.4rem;
   text-decoration: none;
   transition: all 0.2s ease;
+}
+.header__fourth-row .menu li .sub-menu li a:hover {
+  background-color: rgb(85, 84, 84);
+}
+.header__fourth-row .show {
+  margin-left: 0px;
+}
+.header__fourth-row .menu__link_sm {
+  padding: 14px;
 }
 
 .swiper {
@@ -624,16 +626,17 @@ main {
     height: auto;
     display: flex;
   }
-  .header__fourth-row .menu__link:hover {
-    background-color: #ac0c39;
-  }
-  .header__fourth-row .menu__link:hover, .header__fourth-row .submenu__link:hover {
-    background-color: rgba(0, 0, 0, 0.26);
-  }
-  .header__fourth-row .container-submenu {
+  .header__fourth-row .menu li {
     position: relative;
   }
-  .header__fourth-row .submenu {
+  .header__fourth-row .menu li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header__fourth-row .menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.26);
+  }
+  .header__fourth-row .menu li .sub-menu {
     position: absolute;
     top: 56px;
     height: auto;
@@ -643,9 +646,8 @@ main {
     opacity: 0;
     visibility: hidden;
   }
-  .header__fourth-row .container-submenu:hover .submenu {
-    opacity: 1;
-    visibility: visible;
+  .header__fourth-row .menu li .sub-menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.26);
   }
 
   .article__main {
